@@ -7,7 +7,7 @@ API   http://doc.huangsw.com/vue-easytable/app.html#/intro
 * ### State
 ` mapState`辅助函数
 ```
-/ 在单独构建的版本中辅助函数为 Vuex.mapState
+//在单独构建的版本中辅助函数为 Vuex.mapState
 import { mapState } from 'vuex'
 
 export default {
