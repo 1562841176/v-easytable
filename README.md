@@ -243,8 +243,8 @@ actions: {
 ```
 最后，如果我们利用 async / await，我们可以如下组合 action：
 
-// 假设 getData() 和 getOtherData() 返回的是 Promise
 ```
+// 假设 getData() 和 getOtherData() 返回的是 Promise
 actions: {
   async actionA ({ commit }) {
     commit('gotData', await getData())
@@ -255,3 +255,9 @@ actions: {
   }
 }
 ```
+* ### Module
+由于使用单一状态树，应用的所有状态会集中到一个比较大的对象，当应用变得非常复杂时，store对象就会变得相当臃肿
+
+为了解决以上的问题，vuex允许将store分割成模块module，每个模块可以拥有自己的state、mutation、getter、action、甚至是嵌套子模块----从上至下进行同样的方式的分割
+
+
