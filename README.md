@@ -174,4 +174,7 @@ actions: {
   }
 }
 ```
+#### 分发Action
+`stroe.dispath('increment')`
 
+Action 支持同样的荷载方式和对象方式进行分发：
